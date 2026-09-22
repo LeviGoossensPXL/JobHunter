@@ -233,6 +233,26 @@
       font-weight: 500;
     }
 
+    .skill-group {
+      margin-bottom: 8px;
+    }
+
+    .skill-group-title {
+      display: block;
+      margin-bottom: 2px;
+      font-weight: 700;
+    }
+
+    .skill-subskills {
+      list-style: none;
+      padding-left: 10px;
+    }
+
+    .skill-subskills li {
+      font-size: 12.5px;
+      font-weight: 500;
+    }
+
     .language-item {
       font-size: 13px;
       color: #333;
@@ -552,7 +572,7 @@
               <div class="contact-icon">
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect><line x1="16" x2="16" y1="2" y2="6"></line><line x1="8" x2="8" y1="2" y2="6"></line><line x1="3" x2="21" y1="10" y2="10"></line></svg>
               </div>
-              <span>10.01.2002</span>
+              <span>10/01/2002</span>
             </li>
 
             <li class="contact-item">
@@ -574,13 +594,55 @@
           <div>
             <h2 class="sidebar-section-title">Hard Skills</h2>
             <ul class="skills-list">
-              <li>C# / .NET</li>
-              <li>Python</li>
-              <li>TypeScript</li>
-              <li>PHP / Symfony</li>
-              <li>SQL / PostgreSQL</li>
-              <li>React / Vue</li>
-              <li>Docker / Git</li>
+              <li class="skill-group">
+                <span class="skill-group-title">Backend Development</span>
+                <ul class="skill-subskills">
+                  <li>C# / .NET</li>
+                  <li>Entity Framework</li>
+                  <li>PHP / Symfony</li>
+                  <li>Python</li>
+                  <li>TypeScript</li>
+                  <li>Strapi</li>
+                  <li>REST APIs</li>
+                </ul>
+              </li>
+              <li class="skill-group">
+                <span class="skill-group-title">Frontend Development</span>
+                <ul class="skill-subskills">
+                  <li>React</li>
+                  <li>Vue</li>
+                  <li>Twig</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>Responsive web design</li>
+                </ul>
+              </li>
+              <li class="skill-group">
+                <span class="skill-group-title">Databases</span>
+                <ul class="skill-subskills">
+                  <li>PostgreSQL</li>
+                  <li>MySQL</li>
+                  <li>SQL</li>
+                  <li>Database migrations</li>
+                </ul>
+              </li>
+              <li class="skill-group">
+                <span class="skill-group-title">Development Tools</span>
+                <ul class="skill-subskills">
+                  <li>Docker</li>
+                  <li>Git</li>
+                  <li>GitHub</li>
+                  <li>Debugging</li>
+                  <li>Technical documentation</li>
+                </ul>
+              </li>
+              <li class="skill-group">
+                <span class="skill-group-title">Systems</span>
+                <ul class="skill-subskills">
+                  <li>Linux</li>
+                  <li>Windows</li>
+                </ul>
+              </li>
             </ul>
           </div>
 
