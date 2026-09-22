@@ -302,20 +302,21 @@ body {
 }
 
 .timeline-item {
+  position: relative;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  gap: 16px;
+  grid-template-columns: 1fr;
   align-items: baseline;
 }
 
 .full-width-project {
-  grid-template-columns: minmax(0, 1fr) auto;
   margin-bottom: 12px;
 }
 
 .item-date {
-  grid-column: 2;
-  grid-row: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
   font-family: 'Montserrat', sans-serif;
   font-size: 12px;
   font-weight: 700;
@@ -325,12 +326,22 @@ body {
   text-align: right;
 }
 
+.item-location {
+  font-weight: 600;
+  color: #444;
+}
+
 .item-content {
   grid-column: 1;
-  grid-row: 1;
   display: flex;
   flex-direction: column;
   gap: 3px;
+}
+
+.item-title-row,
+.item-content > .item-title,
+.item-content > .item-subtitle {
+  padding-right: 210px;
 }
 
 .item-title-row {
@@ -528,14 +539,21 @@ body {
   }
 
   .item-date {
-    grid-column: 1;
-    grid-row: 2;
+    position: static;
+    order: 2;
     margin-bottom: 2px;
+    white-space: normal;
     text-align: left;
   }
 
   .item-content {
     grid-column: 1;
-    grid-row: 1;
+    order: 1;
+  }
+
+  .item-title-row,
+  .item-content > .item-title,
+  .item-content > .item-subtitle {
+    padding-right: 0;
   }
 }
